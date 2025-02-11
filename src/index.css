@@ -2,10 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  color: #fff;
+:root {
+  --primary-color: #1f2f41;
+  --secondary-color: #50E3C2;
+  --background-color: #151e27;
+  --card-color: #FFFFFF;
+  --text-primary: #fff;
+  --text-secondary: #666666;
+  --border-color: #E0E0E0;
+  --danger-color: #D0021B;
+  --success-color: #7ED321;
 }
 
 body {
-  background-color: #111;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  font-family: Basis-regular;
 }
+
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1370px;
+  }
+}
+
