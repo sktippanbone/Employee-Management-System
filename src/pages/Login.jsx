@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { login } from "../Auth";
 
-
-
-
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,14 +24,20 @@ const Login = () => {
   };
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      <div className="border-2 border-emerald-600 p-20 rounded-xl">
-        <form onSubmit={submitHandler} className="flex flex-col items-center">
+    <div className="flex h-screen w-screen items-center justify-center bg-light-gray-100">
+      <div className="border-2 border-black p-20 rounded-xl bg-gray-800 shadow-lg">
+        <h2 className="text-3xl font-semibold text-center text-white">
+          Log In
+        </h2>
+        <form
+          onSubmit={submitHandler}
+          className="flex flex-col items-center pt-5"
+        >
           <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="text-black border-2 border-emerald-600 text-xl py-3 px-5 rounded-full placeholder:text-gray-400"
+            className="text-black border-2 border-blue-900 text-xl py-3 px-5 rounded-full placeholder:text-gray-400"
             type="email"
             placeholder="Enter Your Email"
           />
@@ -42,13 +45,13 @@ const Login = () => {
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="text-black border-2 border-emerald-600 text-xl py-3 px-5 rounded-full mt-3 placeholder:text-gray-400"
+            className="text-black border-2 border-blue-900 text-xl py-3 px-5 rounded-full mt-3 placeholder:text-gray-400"
             type="password"
             placeholder="Enter Password"
           />
           {error && <p className="text-red-500 mt-2">{error}</p>}
           {success && <p className="text-green-500 mt-2">{success}</p>}
-          <button className="text-white bg-emerald-600 text-xl py-3 px-5 rounded-full mt-5">
+          <button className="text-white bg-blue-500 text-xl py-3 px-5 rounded-full mt-5">
             Log In
           </button>
         </form>
