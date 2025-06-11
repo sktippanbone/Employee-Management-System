@@ -4,14 +4,14 @@
 
 :root {
   --primary-color: #1f2f41;
-  --secondary-color: #50E3C2;
+  --secondary-color: #50e3c2;
   --background-color: #151e27;
-  --card-color: #FFFFFF;
+  --card-color: #ffffff;
   --text-primary: #fff;
   --text-secondary: #666666;
-  --border-color: #E0E0E0;
-  --danger-color: #D0021B;
-  --success-color: #7ED321;
+  --border-color: #e0e0e0;
+  --danger-color: #d0021b;
+  --success-color: #7ed321;
 }
 
 body {
@@ -20,10 +20,8 @@ body {
   font-family: Basis-regular;
 }
 
-
 @media (min-width: 1536px) {
   .container {
     max-width: 1370px;
   }
 }
-

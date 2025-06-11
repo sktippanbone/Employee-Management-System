@@ -24,8 +24,19 @@ const Login = () => {
   };
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center bg-light-gray-100">
-      <div className="border-2 border-black p-20 rounded-xl bg-gray-800 shadow-lg">
+    <div
+      style={{
+        minHeight: "100vh",
+        minWidth: "100vw",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundImage: `url("src/assets/loginback.jpg")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="border-2 border-black p-20 rounded-xl bg-gray-800 bg-opacity-90 shadow-lg">
         <h2 className="text-3xl font-semibold text-center text-white">
           Log In
         </h2>
